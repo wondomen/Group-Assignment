@@ -4,6 +4,8 @@ public class PalindromeChecker {
     Scanner scanner = new Scanner(System.in);
     String input = scanner.nextLine();
 
+    System.out.println("What's Uppppp?");
+
     String transformed = transformInput(input);
 
     boolean isPalindrome = checkPalindrome(transformed);
