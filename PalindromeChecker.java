@@ -32,6 +32,17 @@ public class PalindromeChecker {
       return false;
     }
   }
+  public static void addItem(String item) {
+    System.out.println(item + " has been added to the list.");
+}
+
+public static void removeItem(String item) {
+    System.out.println(item + " has been removed from the list.");
+}
+
+public static void displayList() {
+    System.out.println("Grocery List:");
+}
 
   public static String reverseString(String input) {
     StringBuilder reversed = new StringBuilder();
