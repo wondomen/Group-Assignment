@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class PalindromeChecker {
 
   public static void main(String[] args) {
@@ -5,6 +6,8 @@ public class PalindromeChecker {
     String input = scanner.nextLine();
 
     System.out.println("What's Uppppp?");
+    System.out.println("Amir is printing this line.");
+    System.out.println("Amir is printing this line.");
     System.out.println("Amir is printing this line.");
 
     String transformed = transformInput(input);
