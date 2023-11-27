@@ -3,12 +3,12 @@ import java.util.Scanner;
 public class PalindromeChecker {
 
     public static void main(String[] args) {
-
+        
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
-
+        
         String transformed = transformInput(input);
-
+        
         boolean isPalindrome = checkPalindrome(transformed);
         if (isPalindrome) {
             System.out.println("The transformed input is a palindrome.");
