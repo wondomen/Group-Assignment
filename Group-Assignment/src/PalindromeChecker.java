@@ -6,9 +6,8 @@ public class PalindromeChecker {
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
         String transformed = transformInput(input);
-        boolean isPalindrome = checkPalindrome(transformed);
-        
-        if (isPalindrome) {
+
+        if (checkPalindrome(transformed)) {
             System.out.println("The transformed input is a palindrome.");
         } else {
             System.out.println("The transformed input is not a palindrome.");
@@ -18,10 +17,7 @@ public class PalindromeChecker {
     }
 
     public static String transformInput(String input) {
-        input = input.toLowerCase();
-        input = input.replace(",", "");
-        input = input.replace("!", "");
-        return input;
+        return input.toLowerCase().replaceAll("[,!]", "");
     }
 
     public static boolean checkPalindrome(String input) {
