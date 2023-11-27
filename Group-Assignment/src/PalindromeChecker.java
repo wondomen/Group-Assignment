@@ -6,6 +6,11 @@ public class PalindromeChecker {
     Scanner scanner = new Scanner(System.in);
     String input = scanner.nextLine();
 
+    System.out.println("What's Uppppp?");
+    System.out.println("Amir is printing this line.");
+    System.out.println("Amir is printing this line.");
+    System.out.println("Amir is printing this line.");
+
     String transformed = transformInput(input);
 
     boolean isPalindrome = checkPalindrome(transformed);
@@ -14,7 +19,6 @@ public class PalindromeChecker {
     } else {
       System.out.println("The transformed input is not a palindrome.");
     }
-    System.out.println("What's Uppppp? Amir is printing this line.");
   }
 
   public static String transformInput(String input) {
@@ -32,17 +36,6 @@ public class PalindromeChecker {
       return false;
     }
   }
-  public static void addItem(String item) {
-    System.out.println(item + " has been added to the list.");
-}
-
-public static void removeItem(String item) {
-    System.out.println(item + " has been removed from the list.");
-}
-
-public static void displayList() {
-    System.out.println("Grocery List:");
-}
 
   public static String reverseString(String input) {
     StringBuilder reversed = new StringBuilder();
